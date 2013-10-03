@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!-- TODO: definition for USB-serial chipset (TelosB tested, MIB520 not tested !!! -->
+    <usb-device vendor-id="1027" />
+</resources>

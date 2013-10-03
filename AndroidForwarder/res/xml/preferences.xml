@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <PreferenceCategory
+	    android:title="Data source"
+	    android:key="pref_data_source" >
+	    
+        <ListPreference
+	        android:key="pref_key_source_list"
+	        android:title="Data Source"
+	        android:dialogTitle="Select Data Source"
+	        android:entries="@array/pref_datasource_list"
+	        android:entryValues="@array/pref_datasource_values"
+	        android:defaultValue="@string/pref_datasource_value_default" />
+	        
+        <CheckBoxPreference 
+	        android:key="pref_key_binding"
+	    	android:summary="Enable clients to bind to service"
+	    	android:title="Enable client binding"
+	    	android:defaultValue="true"/>
+        
+        <PreferenceScreen 
+            android:key="pref_simulationScreen"
+            android:title="Simulation settings..."
+            android:persistent="false">
+            
+        </PreferenceScreen>
+        
+        <PreferenceScreen 
+            android:key="pref_usbScreen"
+            android:title="USB settings..."
+            android:persistent="false">
+            
+        </PreferenceScreen>
+        
+        <PreferenceScreen 
+            android:key="pref_networkScreen"
+            android:title="Network settings..."
+            android:persistent="false">
+            
+        </PreferenceScreen>
+        
+	</PreferenceCategory>
+    
+    <PreferenceCategory
+	    android:title="Events"
+	    android:key="pref_key_events" >
+	    
+         <CheckBoxPreference 
+	        android:key="pref_key_lifecycle"
+	    	android:summary="Publish service lifecycle events (start, stop etc.)"
+	    	android:title="Public service events"
+	    	android:defaultValue="false"/>
+	</PreferenceCategory>
+	
+	
+	<PreferenceCategory
+	    android:title="Display"
+	    android:key="pref_key_display" >
+	    
+	 <CheckBoxPreference 
+	        android:key="pref_key_constant_logging"
+	    	android:summary="Constantly receive message notifications from service"
+	    	android:title="Constant message notifications"
+	    	android:defaultValue="false"/>
+	    
+	    
+	</PreferenceCategory>
+    
+    
+    
+	<PreferenceCategory
+	    android:title="Debug mode"
+	    android:key="pref_key_debug_mode" >
+	    
+	    <CheckBoxPreference 
+	        android:key="pref_key_debug_enabled"
+	    	android:summary="Enable debug mode operation"
+	    	android:title="Debug mode"
+	    	android:defaultValue="false"/>
+	    
+	</PreferenceCategory>
+
+    
+</PreferenceScreen>
+    

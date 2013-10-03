@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AndroidForwarder</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_details">Details</string>
+    <string name="hello_world">Hello world!</string>
+
+    <!-- Forwarder Service Strings -->
+    <string name="fs_start">Forwarder Service Starting.</string>
+    <string name="fs_stop">Forwarder Service Stopping.</string>
+    <string name="title_activity_details">DetailsActivity</string>
+
+    <string-array name="pref_datasource_list"> 
+        <item>USB Data Source</item>
+        <item>Simulated Source</item>
+        <item>Network Source</item>
+    </string-array>
+    
+    <string-array name="pref_datasource_values"> 
+        <item>USB</item>
+        <item>Simulation</item>
+        <item>Network</item>
+    </string-array>
+    <string name="pref_datasource_value_default">usb</string>
+    
+</resources>

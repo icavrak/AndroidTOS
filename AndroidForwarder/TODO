@@ -1,0 +1,58 @@
+TODO lista:
+aa
+
+MainActivity:
+
+	-USB, ostali statusi grafièki prikazani
+	- trenutni izvor podataka prikazan grafièki
+	- podatak o trajanju aktivnosti forwardera
+	- imena aplikacija koje su spojene (mehanizam identifikacije imena aplikacije)
+	- koja metoda logiranja aktivna (+neaktivna)
+
+
+forwarderService:
+	- prosljeðivanje lifecycle dogaðaja ostalim aktivnostima na ureðaju (odreðuje se u settings)
+	
+	- prosljeðivanje paketa (poslanih i primljenih) u privremeno spremi¹te - bazu koja takoðer ima ulogu content providera (settings)
+	- baza pamti zadnjih m razmijenjenih paketa (i dolaznih i odlaznih, poredanih po vremenu dogaðanja)
+	
+	- logiranje paketa u datoteku
+		- zadavanje imena datoteke
+		- za svaki session (aktiviranje servera):
+			- logiranje u jednu datoteku (brisanje starog sadr¾aja)
+			- logiranje u jednu datoteku (append na stari sadr¾aj)
+			- logiranje u datoteku s novim imenom (ime datoteke + nastavak)
+		- brisanje log datoteke (ili datoteka)
+		- slanje log datoteke putem maila, na dropbox, google drive ...
+			- ruèno
+			- automatski, nakon zavr¹etka rada servera
+			
+	
+	- logiranje paketa na URL (http)
+		- zadaje se URL servera
+		- svaki paket se ¹alje (POST) na taj URL
+	
+	- simulator WSN-a (neki dijelovi paketa se mogu odrediti, neki su ranodm)
+
+	- Izvori podataka:
+		- USB, simulator (random paketi fiksne velièine), SerialForwarder (af kao klijent), HTTP wsn simulator
+	
+
+
+Details Activity:
+
+	- aktovnost bi trebala povlaèiti pakete iz content providera koji sprema primljene i odaslane pakete
+	- prikazuje se zadnjih n paketa (odreðeno u settings)
+	
+	- grafièki prikazati smjer paketa (ikone - dolazni ili odlazni)
+	
+	
+Napredno:
+
+
+	- SerialForwarder server
+	- HTTP server
+	
+	- dijeljenje usluge drugim ureðajima u lokalnoj/ad hoc mre¾i
+		
+	
